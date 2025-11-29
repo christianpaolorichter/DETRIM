@@ -32,7 +32,7 @@ This package consists of the following interdependent MATLAB functions:
 To get started, clone the repository to your local machine using Git Bash:
 
 ```bash
-git clone git@github.com:christianpaolorichter/Detection_of_Transient_Imobilization.git
+git clone git@github.com:christianpaolorichter/DETRIM.git
 ```
 
 or using direct download:
@@ -44,7 +44,7 @@ Then, add the main directory and all subfolders to your MATLAB environment:
 
 ```Matlab
 % Run this command in MATLAB after cloning:
-addpath(genpath('/path/to/Detection_of_Transient_Imobilization/'));
+addpath(genpath('/path/to/DETRIM/'));
 ```
 
 ## Getting Started
@@ -87,7 +87,7 @@ searchTime = 7; %[frame]
 ```
 You should obtain the following Output (individual immobilization events are colored):
 <p align="center">
-  <img src="https://github.com/christianpaolorichter/Detection_of_Transient_Imobilization/blob/main/evaluation/result_DETRIM_localization_data.png?raw=true" alt=""/>
+  <img src="https://github.com/christianpaolorichter/DETRIM/blob/main/evaluation/result_DETRIM_localization_data.png?raw=true" alt=""/>
 </p>
 
 ## Performance Evaluation (Simulation Results)
@@ -274,7 +274,7 @@ legend('Observed Cluster Count', ['Fitted Lifetime (\tau = ', ...
 * The recovered distribution of cluster durations was accurately fitted by an exponential decay model, and the **recovered mean bound lifetime ($\hat{\mu}$) closely matched the simulated target lifetime ($\tau$)**, proving the method's effectiveness for kinetic analysis.
 
 <p align="center">
-  <img src="https://github.com/christianpaolorichter/Detection_of_Transient_Imobilization/blob/main/evaluation/result_evaluate_DETRIM_TPR_and_tau.png?raw=true" alt=""/>
+  <img src="https://github.com/christianpaolorichter/DETRIM/blob/main/evaluation/result_evaluate_DETRIM_TPR_and_tau.png?raw=true" alt=""/>
 </p>
 
 ### II. False Positive Rate (Mobile Particles)
@@ -355,7 +355,7 @@ axis([5.5 205.5 1.5 20.5])
 * The time search window to achieve a false positive rate (FPR) below 1% at a fixed frame rate (here $\Delta t$ = 32 ms) depends on the diffusion coefficient ($D$) and the localization precision ($\epsilon$).
 
 <p align="center">
-  <img src="https://github.com/christianpaolorichter/Detection_of_Transient_Imobilization/blob/main/evaluation/result_evaluate_DETRIM_FPR.png?raw=true" alt=""/>
+  <img src="https://github.com/christianpaolorichter/DETRIM/blob/main/evaluation/result_evaluate_DETRIM_FPR.png?raw=true" alt=""/>
 </p>
 
 To set the optimal search radius and time search window given the minimal expected diffusion coefficient of particles and localization precision:
@@ -378,4 +378,4 @@ fprintf('Optimal time search window [frames] = %.0f\n',searchTime)
 ## Citation
 If you use this software/repository for your research, please cite:
 
-Richter, C.P. (2025). *DETRIM* (v1.0.0). [Software]. Available from: https://github.com/christianpaolorichter/Detection_of_Transient_Imobilization
+Richter, C.P. (2025). *DETRIM* (v1.0.0). [Software]. Available from: https://github.com/christianpaolorichter/DETRIM
