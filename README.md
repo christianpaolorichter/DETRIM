@@ -378,4 +378,4 @@ fprintf('Optimal time search window [frames] = %.0f\n',searchTime)
 ## Citation
 If you use this software/repository for your research, please cite:
 
-Richter, C.P. (2025). *DETRIM* (v1.0.1). [Software]. [![DOI](https://zenodo.org/badge/1106554772.svg)](https://doi.org/10.5281/zenodo.17762828)
+Richter, C.P. (2025). *DETRIM* (v1.0.1). [Software]. Zenodo. https://doi.org/10.5281/zenodo.17762828
